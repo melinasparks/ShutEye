@@ -1,2 +1,2 @@
-# Shuteye
-Shuteye Android style alarm clock for iOS
+# ShutEye
+ShutEye Android style alarm clock for iOS
