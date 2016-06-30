@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--navigationController-->
         <scene sceneID="n6F-N4-MF6">
             <objects>
-                <navigationController id="iSg-ZP-Lkv" sceneMemberID="viewController">
+                <navigationController title="navigationController" id="iSg-ZP-Lkv" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YW8-xo-C94">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-18.5" y="398.5"/>
         </scene>
-        <!--ShutEye-->
+        <!--AlarmTableViewController-->
         <scene sceneID="e40-Yl-Bau">
             <objects>
-                <tableViewController id="9HK-Cj-EqL" customClass="AlarmsTableViewController" customModule="Shuteye" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="AlarmTableViewController" id="9HK-Cj-EqL" customClass="AlarmsTableViewController" customModule="Shuteye" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" id="f7j-Xw-ax6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,17 +104,17 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="ab0-4L-dMy" kind="show" identifier="AlarmDetailsSegue" action="showDetailViewController:sender:" id="phm-Nh-M1r"/>
+                        <segue destination="ab0-4L-dMy" kind="show" identifier="AlarmDetailsSegue" id="HRp-TE-bEO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5d-eR-CVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="464.5" y="382.5"/>
         </scene>
-        <!--View Controller-->
+        <!--AlarmDetailViewController-->
         <scene sceneID="qCn-B5-vRL">
             <objects>
-                <viewController id="ab0-4L-dMy" sceneMemberID="viewController">
+                <viewController title="AlarmDetailViewController" id="ab0-4L-dMy" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="URb-ds-fuR"/>
                         <viewControllerLayoutGuide type="bottom" id="C8q-kO-4na"/>
@@ -132,11 +132,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ShutEye" id="CJp-7e-p4K">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gAg-BC-CLM">
+                            <color key="tintColor" red="1" green="0.0" blue="0.020532956710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yjQ-U8-asU">
+                            <color key="tintColor" red="1" green="0.0" blue="0.020532956710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfH-mG-E27" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.5" y="382.5"/>
+            <point key="canvasLocation" x="946.5" y="388.5"/>
         </scene>
     </scenes>
 </document>
