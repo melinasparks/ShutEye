@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		59997D4D1D23189F0062FB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D4C1D23189F0062FB85 /* AppDelegate.swift */; };
-		59997D4F1D23189F0062FB85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D4E1D23189F0062FB85 /* ViewController.swift */; };
 		59997D521D23189F0062FB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59997D501D23189F0062FB85 /* Main.storyboard */; };
 		59997D541D23189F0062FB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59997D531D23189F0062FB85 /* Assets.xcassets */; };
 		59997D571D23189F0062FB85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59997D551D23189F0062FB85 /* LaunchScreen.storyboard */; };
 		59997D621D23189F0062FB85 /* ShuteyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D611D23189F0062FB85 /* ShuteyeTests.swift */; };
 		59997D6D1D23189F0062FB85 /* ShuteyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D6C1D23189F0062FB85 /* ShuteyeUITests.swift */; };
+		59997D801D248CE20062FB85 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D7F1D248CE20062FB85 /* Alarm.swift */; };
+		59997D861D249F460062FB85 /* AlarmsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D851D249F460062FB85 /* AlarmsTableViewController.swift */; };
+		59997D881D249F500062FB85 /* AlarmSampleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D871D249F500062FB85 /* AlarmSampleDataSource.swift */; };
+		59997D921D24A3900062FB85 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D911D24A3900062FB85 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		59997D491D23189F0062FB85 /* Shuteye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shuteye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59997D4C1D23189F0062FB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59997D4E1D23189F0062FB85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59997D511D23189F0062FB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59997D531D23189F0062FB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59997D561D23189F0062FB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		59997D681D23189F0062FB85 /* ShuteyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuteyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59997D6C1D23189F0062FB85 /* ShuteyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuteyeUITests.swift; sourceTree = "<group>"; };
 		59997D6E1D23189F0062FB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59997D7F1D248CE20062FB85 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		59997D851D249F460062FB85 /* AlarmsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmsTableViewController.swift; path = "Alarm Table View/AlarmsTableViewController.swift"; sourceTree = "<group>"; };
+		59997D871D249F500062FB85 /* AlarmSampleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmSampleDataSource.swift; path = "Alarm Table View/AlarmSampleDataSource.swift"; sourceTree = "<group>"; };
+		59997D911D24A3900062FB85 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				59997D4C1D23189F0062FB85 /* AppDelegate.swift */,
-				59997D4E1D23189F0062FB85 /* ViewController.swift */,
+				59997D7F1D248CE20062FB85 /* Alarm.swift */,
+				59997D821D248DE50062FB85 /* Alarm Table View */,
 				59997D501D23189F0062FB85 /* Main.storyboard */,
 				59997D531D23189F0062FB85 /* Assets.xcassets */,
 				59997D551D23189F0062FB85 /* LaunchScreen.storyboard */,
@@ -123,6 +130,16 @@
 				59997D6E1D23189F0062FB85 /* Info.plist */,
 			);
 			path = ShuteyeUITests;
+			sourceTree = "<group>";
+		};
+		59997D821D248DE50062FB85 /* Alarm Table View */ = {
+			isa = PBXGroup;
+			children = (
+				59997D871D249F500062FB85 /* AlarmSampleDataSource.swift */,
+				59997D851D249F460062FB85 /* AlarmsTableViewController.swift */,
+				59997D911D24A3900062FB85 /* CustomTableViewCell.swift */,
+			);
+			name = "Alarm Table View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59997D4F1D23189F0062FB85 /* ViewController.swift in Sources */,
 				59997D4D1D23189F0062FB85 /* AppDelegate.swift in Sources */,
+				59997D861D249F460062FB85 /* AlarmsTableViewController.swift in Sources */,
+				59997D881D249F500062FB85 /* AlarmSampleDataSource.swift in Sources */,
+				59997D921D24A3900062FB85 /* CustomTableViewCell.swift in Sources */,
+				59997D801D248CE20062FB85 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +502,7 @@
 				59997D731D2318A00062FB85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59997D741D2318A00062FB85 /* Build configuration list for PBXNativeTarget "ShuteyeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +511,7 @@
 				59997D761D2318A00062FB85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59997D771D2318A00062FB85 /* Build configuration list for PBXNativeTarget "ShuteyeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +520,7 @@
 				59997D791D2318A00062FB85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
