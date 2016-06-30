@@ -13,6 +13,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet var customTime: UILabel!
     @IBOutlet var customSymbol: UILabel!
     @IBOutlet var customName: UILabel!
+    @IBOutlet var alarmSwitch: UISwitch!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
