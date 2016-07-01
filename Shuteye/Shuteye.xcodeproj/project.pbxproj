@@ -18,6 +18,7 @@
 		59997D881D249F500062FB85 /* AlarmSampleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D871D249F500062FB85 /* AlarmSampleDataSource.swift */; };
 		59997D921D24A3900062FB85 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D911D24A3900062FB85 /* CustomTableViewCell.swift */; };
 		59997D9A1D2713E20062FB85 /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D991D2713E20062FB85 /* TimeHelper.swift */; };
+		59997D9D1D271F540062FB85 /* AlarmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59997D9C1D271F540062FB85 /* AlarmDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		59997D871D249F500062FB85 /* AlarmSampleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmSampleDataSource.swift; path = "Alarm Table View/AlarmSampleDataSource.swift"; sourceTree = "<group>"; };
 		59997D911D24A3900062FB85 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		59997D991D2713E20062FB85 /* TimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeHelper.swift; path = Utils/TimeHelper.swift; sourceTree = "<group>"; };
+		59997D9C1D271F540062FB85 /* AlarmDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				59997D9B1D2714E50062FB85 /* Model */,
 				59997D4C1D23189F0062FB85 /* AppDelegate.swift */,
+				59997D9C1D271F540062FB85 /* AlarmDetailsViewController.swift */,
 				59997D821D248DE50062FB85 /* Alarm Table View */,
 				59997D501D23189F0062FB85 /* Main.storyboard */,
 				59997D981D2713D90062FB85 /* Utils */,
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59997D9D1D271F540062FB85 /* AlarmDetailsViewController.swift in Sources */,
 				59997D4D1D23189F0062FB85 /* AppDelegate.swift in Sources */,
 				59997D861D249F460062FB85 /* AlarmsViewController.swift in Sources */,
 				59997D9A1D2713E20062FB85 /* TimeHelper.swift in Sources */,

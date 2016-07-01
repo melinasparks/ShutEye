@@ -55,9 +55,10 @@ class AlarmsViewController: UITableViewController {
         // TODO: Save Alarm
     }
     
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        performSegueWithIdentifier("AlarmDetailsSegue", sender: self)
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //performSegueWithIdentifier("AlarmDetailsSegue", sender: self)
+        // TODO: Alarm has been selected
+    }
 
     /*
     // Override to support conditional editing of the table view.
