@@ -26,7 +26,7 @@
         <!--AlarmTableViewController-->
         <scene sceneID="e40-Yl-Bau">
             <objects>
-                <tableViewController title="AlarmTableViewController" id="9HK-Cj-EqL" customClass="AlarmsTableViewController" customModule="Shuteye" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="AlarmTableViewController" id="9HK-Cj-EqL" customClass="AlarmsViewController" customModule="Shuteye" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" id="f7j-Xw-ax6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfH-mG-E27" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758.5" y="388.5"/>
+            <point key="canvasLocation" x="1395.5" y="387.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F9P-hJ-RHR">

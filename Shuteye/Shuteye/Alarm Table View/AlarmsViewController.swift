@@ -1,5 +1,5 @@
 //
-//  AlarmsTableViewController.swift
+//  AlarmsViewController.swift
 //  Shuteye
 //
 //  Created by melspa on 6/29/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlarmsTableViewController: UITableViewController {
+class AlarmsViewController: UITableViewController {
     
     var alarmDataSource:[Alarm] = alarmsData
 
@@ -42,9 +42,7 @@ class AlarmsTableViewController: UITableViewController {
         let cell : CustomTableViewCell = tableView.dequeueReusableCellWithIdentifier("AlarmCell") as! CustomTableViewCell
 
         let alarm = alarmDataSource[indexPath.row] as Alarm
-        cell.customName.text = alarm.name
-        cell.customTime.text = TimeHelper().timeStringFrom(alarm.fireDate)
-        cell.customSymbol.text = TimeHelper().symbolStringFrom(alarm.fireDate)
+        cell.alarm = alarm
         
         return cell
     }
