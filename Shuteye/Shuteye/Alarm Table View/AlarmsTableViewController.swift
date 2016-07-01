@@ -43,23 +43,15 @@ class AlarmsTableViewController: UITableViewController {
 
         let alarm = alarmDataSource[indexPath.row] as Alarm
         cell.customName.text = alarm.name
-        
-        // Format the custom Time string
-        let timeFormatter = NSDateFormatter()
-        timeFormatter.dateFormat = "h:mm"
-        cell.customTime.text = timeFormatter.stringFromDate(alarm.fireDate)
-        
-        // Format the custom symbol string
-        let symbolFormatter = NSDateFormatter()
-        symbolFormatter.dateFormat = "a"
-        cell.customSymbol.text = symbolFormatter.stringFromDate(alarm.fireDate)
+        cell.customTime.text = TimeHelper().timeStringFrom(alarm.fireDate)
+        cell.customSymbol.text = TimeHelper().symbolStringFrom(alarm.fireDate)
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("AlarmDetailsSegue", sender: self)
-    }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        performSegueWithIdentifier("AlarmDetailsSegue", sender: self)
+//    }
 
     /*
     // Override to support conditional editing of the table view.

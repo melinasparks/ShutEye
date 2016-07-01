@@ -100,12 +100,12 @@
                     <navigationItem key="navigationItem" title="ShutEye" id="tju-sS-XEC">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="Gaa-5J-uwV">
                             <color key="tintColor" red="1" green="0.0" blue="0.020532956710000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="3PM-0P-0kV" kind="presentation" modalPresentationStyle="fullScreen" id="1BK-Sm-0Ng"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="ab0-4L-dMy" kind="show" identifier="AlarmDetailsSegue" id="HRp-TE-bEO"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5d-eR-CVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +144,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfH-mG-E27" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946.5" y="388.5"/>
+            <point key="canvasLocation" x="1758.5" y="388.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F9P-hJ-RHR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3PM-0P-0kV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4hb-Ap-Lx1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ab0-4L-dMy" kind="relationship" relationship="rootViewController" id="K8g-wv-tnp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2b-ug-Rrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="388"/>
         </scene>
     </scenes>
 </document>
