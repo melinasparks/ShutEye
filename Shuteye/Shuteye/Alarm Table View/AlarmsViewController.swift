@@ -47,6 +47,14 @@ class AlarmsViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func unwindFromCancel(unwindSegue: UIStoryboardSegue) {
+        // TODO: Cancel alarm
+    }
+    
+    @IBAction func unwindFromSave(unwindSegue: UIStoryboardSegue) {
+        // TODO: Save Alarm
+    }
+    
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        performSegueWithIdentifier("AlarmDetailsSegue", sender: self)
 //    }
